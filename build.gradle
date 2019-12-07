@@ -17,12 +17,6 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-//plugins {
-//    id 'java'
-//    id 'org.springframework.boot'
-//    id 'io.spring.dependency-management'
-//}
-
 group 'com.victorsung'
 version '1.0-SNAPSHOT'
 
@@ -34,5 +28,7 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
     testCompile ('org.springframework.boot:spring-boot-starter-test')
 }
